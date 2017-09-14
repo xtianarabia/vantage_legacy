@@ -1,5 +1,178 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block contentIndex
+
+  .fh5co-hero
+    .fh5co-overlay
+    .fh5co-cover.text-center(data-stellar-background-ratio='0.5', style='background-image: url(images/home-image.jpg);')
+      .desc.animate-box
+        h2 VANTAGE LEGACY
+        span
+          | Vantage group of millionares
+        span
+          a.btn.btn-primary(href='#') Get Started
+  // end:header-top
+
+  #fh5co-work-section
+    .container
+      .row
+        .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+          h1= title
+          p Welcome to #{title}
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+    .container
+      .row
+        .col-md-8.col-sm-8
+          .fh5co-grid.animate-box(style='background-image: url(images/work-1.jpg);')
+            a.image-popup.text-center(href='#')
+              .prod-title
+                h3 Don’t Just Stand There
+                span Illustration, Print
+        .col-md-4.col-sm-4
+          .fh5co-grid.animate-box(style='background-image: url(images/work-2.jpg);')
+            a.image-popup.text-center(href='#')
+              .prod-title
+                h3 Don’t Just Stand There
+                span Illustration, Print
+        .col-md-4.col-sm-4
+          .fh5co-grid.animate-box(style='background-image: url(images/work-3.jpg);')
+            a.image-popup.text-center(href='#')
+              .prod-title
+                h3 Don’t Just Stand There
+                span Illustration, Print
+        .col-md-8.col-sm-8
+          .fh5co-grid.animate-box(style='background-image: url(images/work-4.jpg);')
+            a.image-popup.text-center(href='#')
+              .prod-title
+                h3 Don’t Just Stand There
+                span Illustration, Print
+  // fh5co-work-section
+
+  #fh5co-services-section.fh5co-section-gray
+    .container
+      .row
+        .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+          h3 What We Do
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+    .container
+      .row.text-center
+        .col-md-4.col-sm-4
+          .services.animate-box
+            span
+              i.icon-browser
+            h3 Web Development
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-md-4.col-sm-4
+          .services.animate-box
+            span
+              i.icon-mobile
+            h3 Mobile Apps
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-md-4.col-sm-4
+          .services.animate-box
+            span
+              i.icon-tools
+            h3 UX Design
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-md-4.col-sm-4
+          .services.animate-box
+            span
+              i.icon-video
+            h3 Video Editing
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-md-4.col-sm-4
+          .services.animate-box
+            span
+              i.icon-search
+            h3 SEO Ranking
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        .col-md-4.col-sm-4
+          .services.animate-box
+            span
+              i.icon-cloud
+            h3 Cloud Based Apps
+            p
+              | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+  // fh5co-services-section
+  #fh5co-content-section
+    .container
+      .row
+        .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+          h3 What Others Say
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+    .container
+      .row
+        .col-md-10.col-md-offset-1
+          .fh5co-testimonial.text-center.animate-box
+            figure
+              img(src='images/user-1.jpg', alt='user')
+            blockquote
+              p
+                | “Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.”
+            span Steve Jobs, Apple Inc.
+  // fh5co-content-section
+  #fh5co-blog-section.fh5co-section-gray
+    .container
+      .row
+        .col-md-8.col-md-offset-2.text-center.heading-section.animate-box
+          h3 Recent From Blog
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.
+    .container
+      .row
+        .col-lg-4.col-md-4
+          .fh5co-blog.animate-box
+            a(href='#')
+              img.img-responsive(src='images/blog-1.jpg', alt='')
+            .image-popup(href='#')
+              .prod-title
+                h3
+                  a(href='', #='') 45 Minimal Worksspace Rooms for Web Savvys
+                span.posted_by Posted by: Admin
+                span.comment
+                  a(href='')
+                    | 21
+                    i.icon-bubble22
+                p
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                a.btn.btn-primary(href='#') Read More
+        .col-lg-4.col-md-4
+          .fh5co-blog.animate-box
+            a(href='#')
+              img.img-responsive(src='images/blog-2.jpg', alt='')
+            .image-popup(href='#')
+              .prod-title
+                h3
+                  a(href='', #='') 45 Minimal Worksspace Rooms for Web Savvys
+                span.posted_by Posted by: Admin
+                span.comment
+                  a(href='')
+                    | 21
+                    i.icon-bubble22
+                p
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                a.btn.btn-primary(href='#') Read More
+        .col-lg-4.col-md-4
+          .fh5co-blog.animate-box
+            a(href='#')
+              img.img-responsive(src='images/blog-3.jpg', alt='')
+            .image-popup(href='#')
+              .prod-title
+                h3
+                  a(href='', #='') 45 Minimal Worksspace Rooms for Web Savvys
+                span.posted_by Posted by: Admin
+                span.comment
+                  a(href='')
+                    | 21
+                    i.icon-bubble22
+                p
+                  | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                a.btn.btn-primary(href='#') Read More
+  // fh5co-blog-section

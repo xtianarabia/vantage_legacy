@@ -1,7 +1,157 @@
-doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+  title= title
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  meta(name='description', content='vantage legacy prototype')
+  meta(name='keywords', content='vantage, legacy, vantage legacy')
+  meta(name='author', content='xtian')
+  //
+    //////////////////////////////////////////////////////
+    DESIGNED & DEVELOPED by :
+    Website:
+    Email:
+    Twitter:
+    Facebook:
+    //////////////////////////////////////////////////////
+  // Facebook and Twitter integration
+  meta(property='og:title', content='')
+  meta(property='og:image', content='')
+  meta(property='og:url', content='')
+  meta(property='og:site_name', content='')
+  meta(property='og:description', content='')
+  meta(name='twitter:title', content='')
+  meta(name='twitter:image', content='')
+  meta(name='twitter:url', content='')
+  meta(name='twitter:card', content='')
+  // Place favicon.ico and apple-touch-icon.png in the root directory
+  //link(rel='shortcut icon', href='favicon.ico')
+  link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300', rel='stylesheet', type='text/css')
+  // Animate.css
+  link(rel='stylesheet', href='/stylesheets/animate.css')
+  // Icomoon Icon Fonts
+  link(rel='stylesheet', href='/stylesheets/icomoon.css')
+  // Bootstrap
+  link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+  // Superfish
+  link(rel='stylesheet', href='/stylesheets/superfish.css')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  // Modernizr JS
+  script(src='/javascipts/modernizr-2.6.2.min.js')
+  // FOR IE9 below
+  //if lt IE 9
+    script(src='js/respond.min.js')
   body
-    block content
+    #fh5co-wrapper
+      #fh5co-page
+        #fh5co-header
+          header#fh5co-header-section
+            .container
+              .navbar-fixed-top
+                .nav-header(style='background-color: #444444; padding-left:20%; padding-right:20%')
+                  a.js-fh5co-nav-toggle.fh5co-nav-toggle(href='#')
+                    i
+                  h1#fh5co-logo
+                    a(href='#')
+                      | VANTAGE
+                      span  LEGACY
+                  // START #fh5co-menu-wrap
+                  nav#fh5co-menu-wrap(role='navigation')
+                    ul#fh5co-primary-menu.sf-menu
+                      li.active
+                        a(href='#') Home
+                      li
+                        a.fh5co-sub-ddown(href='portfolio.html') Projects
+                        ul.fh5co-sub-menu
+                          li
+                            a(href='http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template', target='_blank') Build
+                          li
+                            a(href='http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap', target='_blank') Work
+                          li
+                            a(href='http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap', target='_blank') Light
+                          li
+                            a(href='http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap', target='_blank') Relic
+                          li
+                            a(href='http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap', target='_blank') Display
+                          li
+                            a(href='http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap', target='_blank') Sprint
+                      li
+                        a.fh5co-sub-ddown(href='services.html') Services
+                        ul.fh5co-sub-menu
+                          li
+                            a(href='left-sidebar.html') Web Development
+                          li
+                            a(href='right-sidebar.html') Branding & Identity
+                          li
+                            a.fh5co-sub-ddown(href='#') Free HTML5
+                            ul.fh5co-sub-menu
+                              li
+                                a(href='http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template', target='_blank') Build
+                              li
+                                a(href='http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap', target='_blank') Work
+                              li
+                                a(href='http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap', target='_blank') Light
+                              li
+                                a(href='http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap', target='_blank') Relic
+                              li
+                                a(href='http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap', target='_blank') Display
+                              li
+                                a(href='http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap', target='_blank') Sprint
+                          li
+                            a(href='#') UI Animation
+                          li
+                            a(href='#') Copywriting
+                          li
+                            a(href='#') Photography
+                      li
+                        a(href='about.html') About
+                      li
+                        a(href='blog.html') Blog
+                      li
+                        a(href='contact.html') Contact
+
+        block contentIndex
+
+        footer
+          #footer
+            .container
+              .row
+                .col-md-6.col-md-offset-3.text-center
+                  p.fh5co-social-icons
+                    a(href='#')
+                      i.icon-twitter2
+                    a(href='#')
+                      i.icon-facebook2
+                    a(href='#')
+                      i.icon-instagram
+                    a(href='#')
+                      i.icon-dribbble2
+                    a(href='#')
+                      i.icon-youtube
+                  p
+                    | Copyright 2016 Free Html5
+                    a(href='#') Guardian
+                    | . All Rights Reserved.
+                    br
+                    | Made with
+                    i.icon-heart3
+                    |  by
+                    a(href='http://freehtml5.co/', target='_blank') Freehtml5.co
+                    |  / Demo Images:
+                    a(href='https://unsplash.com/', target='_blank') Unsplash
+      // END fh5co-page
+    // END fh5co-wrapper
+    // jQuery
+    script(src='js/jquery.min.js')
+    // jQuery Easing
+    script(src='js/jquery.easing.1.3.js')
+    // Bootstrap
+    script(src='js/bootstrap.min.js')
+    // Waypoints
+    script(src='js/jquery.waypoints.min.js')
+    // Stellar
+    script(src='js/jquery.stellar.min.js')
+    // Superfish
+    script(src='js/hoverIntent.js')
+    script(src='js/superfish.js')
+    // Main JS (Do not remove)
+    script(src='js/main.js')
+
